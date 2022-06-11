@@ -170,6 +170,8 @@ TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Back"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
+About.Visible = false
+Menu.Visible = true
 
 UICorner_11.Parent = TextButton
 
@@ -229,6 +231,7 @@ ScriptHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 ScriptHub.Position = UDim2.new(0, 305, 0, 81)
 ScriptHub.Size = UDim2.new(0, 585, 0, 626)
 ScriptHub.Draggable = true
+ScriptHub.Visible = false
 
 Bedwars.Name = "Bedwars"
 Bedwars.Parent = ScriptHub
