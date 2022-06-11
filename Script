@@ -1,0 +1,277 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Main = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local OpenButtion = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Menu = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local OpenButtion_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local OpenButtion_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local About = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local KeySys = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Password = Instance.new("TextBox")
+local UICorner_13 = Instance.new("UICorner")
+local UseKey = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local GetKey = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local ScriptHub = Instance.new("Frame")
+local Bedwars = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local Admin = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Goback = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.CoreGui
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenFrame.Name = "Open Frame"
+OpenFrame.Parent = Main
+OpenFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrame.Position = UDim2.new(0.00773993786, 0, 0.925153375, 0)
+OpenFrame.Size = UDim2.new(0, 145, 0, 52)
+
+OpenButtion.Name = "Open Buttion"
+OpenButtion.Parent = OpenFrame
+OpenButtion.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+OpenButtion.BorderColor3 = Color3.fromRGB(0, 170, 0)
+OpenButtion.Position = UDim2.new(-1.1920929e-07, 0, 0, 0)
+OpenButtion.Size = UDim2.new(0, 145, 0, 52)
+OpenButtion.Font = Enum.Font.SourceSans
+OpenButtion.Text = "Open"
+OpenButtion.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenButtion.TextSize = 14.000
+OpenButtion.MouseButton1Down:connect(function()
+	Menu.Visible = true
+	OpenFrame.Visible = false
+end)
+
+
+UICorner.Parent = OpenButtion
+
+UICorner_2.Parent = OpenFrame
+
+Menu.Name = "Menu"
+Menu.Parent = Main
+Menu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Menu.Position = UDim2.new(0.283281744, 0, 0.12760736, 0)
+Menu.Size = UDim2.new(0, 453, 0, 553)
+Menu.Visible = false
+Menu.Draggable = true
+
+UICorner_3.Parent = Menu
+
+TextLabel.Parent = Menu
+TextLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel.Size = UDim2.new(0, 453, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Dog Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+UICorner_4.Parent = TextLabel
+
+OpenButtion_2.Name = "Open Buttion"
+OpenButtion_2.Parent = Menu
+OpenButtion_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenButtion_2.BorderColor3 = Color3.fromRGB(0, 170, 0)
+OpenButtion_2.Position = UDim2.new(0, 0, 0.274285704, 0)
+OpenButtion_2.Size = UDim2.new(0, 175, 0, 46)
+OpenButtion_2.Font = Enum.Font.SourceSans
+OpenButtion_2.Text = "About"
+OpenButtion_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenButtion_2.TextSize = 14.000
+
+UICorner_5.Parent = OpenButtion_2
+
+OpenButtion_3.Name = "Open Buttion"
+OpenButtion_3.Parent = Menu
+OpenButtion_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+OpenButtion_3.BorderColor3 = Color3.fromRGB(0, 170, 0)
+OpenButtion_3.Position = UDim2.new(0, 0, 0.392380953, 0)
+OpenButtion_3.Size = UDim2.new(0, 175, 0, 46)
+OpenButtion_3.Font = Enum.Font.SourceSans
+OpenButtion_3.Text = "Get Key"
+OpenButtion_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenButtion_3.TextSize = 14.000
+
+UICorner_6.Parent = OpenButtion_3
+
+About.Name = "About"
+About.Parent = Main
+About.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+About.Position = UDim2.new(0.285603732, 0, 0.230674848, 0)
+About.Size = UDim2.new(0, 320, 0, 452)
+About.Visible = false
+About.Draggable = true
+
+UICorner_7.Parent = About
+
+TextLabel_2.Parent = About
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+TextLabel_2.Size = UDim2.new(0, 320, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Dog Hub  -About"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_8.Parent = TextLabel_2
+
+TextLabel_3.Parent = About
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+TextLabel_3.Position = UDim2.new(0, 0, 0.241150454, 0)
+TextLabel_3.Size = UDim2.new(0, 59, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Lucian"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+UICorner_9.Parent = TextLabel_3
+
+TextLabel_4.Parent = About
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+TextLabel_4.Position = UDim2.new(0.184375003, 0, 0.241150439, 0)
+TextLabel_4.Size = UDim2.new(0, 246, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Main Creater Of Dog Hub"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+UICorner_10.Parent = TextLabel_4
+
+TextButton.Parent = About
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+TextButton.Position = UDim2.new(0.675000012, 0, 0.889380515, 0)
+TextButton.Size = UDim2.new(0, 104, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Back"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_11.Parent = TextButton
+
+KeySys.Name = "Key Sys"
+KeySys.Parent = Main
+KeySys.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+KeySys.Position = UDim2.new(0.0905572772, 0, 0.18895705, 0)
+KeySys.Size = UDim2.new(0, 774, 0, 458)
+KeySys.Visible = false
+KeySys.Draggable = true
+
+UICorner_12.Parent = KeySys
+
+Password.Name = "Password"
+Password.Parent = KeySys
+Password.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Password.Position = UDim2.new(0.310077518, 0, 0.390829712, 0)
+Password.Size = UDim2.new(0, 313, 0, 50)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "PUT PASSWORD HERE"
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextSize = 14.000
+
+UICorner_13.Parent = Password
+
+UseKey.Name = "Use Key"
+UseKey.Parent = KeySys
+UseKey.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+UseKey.Position = UDim2.new(0, 90, 0, 346)
+UseKey.Size = UDim2.new(0, 200, 0, 50)
+UseKey.Font = Enum.Font.SourceSans
+UseKey.Text = "Use Key"
+UseKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+UseKey.TextSize = 14.000
+if Password.Text == "Your Mom" then
+	KeySys.Visible = false
+	wait(0.5)
+	ScriptHub.Visible = true
+end
+UICorner_14.Parent = UseKey
+
+GetKey.Name = "Get Key"
+GetKey.Parent = KeySys
+GetKey.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+GetKey.Position = UDim2.new(0, 491, 0, 346)
+GetKey.Size = UDim2.new(0, 200, 0, 50)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "Get Key"
+GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.TextSize = 14.000
+
+UICorner_15.Parent = GetKey
+
+ScriptHub.Name = "Script Hub"
+ScriptHub.Parent = Main
+ScriptHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScriptHub.Position = UDim2.new(0, 305, 0, 81)
+ScriptHub.Size = UDim2.new(0, 585, 0, 626)
+ScriptHub.Draggable = true
+
+Bedwars.Name = "Bedwars"
+Bedwars.Parent = ScriptHub
+Bedwars.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Bedwars.Position = UDim2.new(0, 10, 0, 144)
+Bedwars.Size = UDim2.new(0, 77, 0, 89)
+Bedwars.Font = Enum.Font.SourceSans
+Bedwars.Text = "Bedwars"
+Bedwars.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bedwars.TextSize = 14.000
+Bedwars.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+UICorner_16.Parent = Bedwars
+
+UICorner_17.Parent = ScriptHub
+
+Admin.Name = "Admin"
+Admin.Parent = ScriptHub
+Admin.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Admin.Position = UDim2.new(0, 10, 0, 43)
+Admin.Size = UDim2.new(0, 77, 0, 89)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 14.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+
+end)
+
+UICorner_18.Parent = Admin
+
+Goback.Name = "Go back"
+Goback.Parent = ScriptHub
+Goback.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Goback.Position = UDim2.new(0, 508, 0, 0)
+Goback.Size = UDim2.new(0, 77, 0, 89)
+Goback.Font = Enum.Font.SourceSans
+Goback.Text = "X"
+Goback.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goback.TextSize = 100.000
+
+UICorner_19.Parent = Goback
